@@ -6,4 +6,4 @@ from django.template.response import TemplateResponse
 # https://spookylukey.github.io/django-views-the-right-way/the-pattern.html
 ### ###
 def index(request):
-    return TemplateResponse(request, template="t2/base.html", context=None)
+    return TemplateResponse(request, template="{{ app_name }}/base.html", context=None)
